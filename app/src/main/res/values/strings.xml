@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Loblaws Digital</string>
+    <string name="articles_list_screen">Kotlin News</string>
+    <string name="error_network">Oups! Looks like you\'re not connected to the internet</string>
+    <string name="error_unkown">Something went wrong</string>
+    <string name="feed_article_image_content_description">article image</string>
+</resources>

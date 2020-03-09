@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/feedFragment">
+
+    <fragment
+        android:id="@+id/feedFragment"
+        android:name="com.mbo.loblaws.feed.FeedFragment"
+        android:label="@string/articles_list_screen">
+        <action
+            android:id="@+id/action_feed_to_article"
+            app:destination="@id/articleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/articleFragment"
+        android:name="com.mbo.loblaws.article.ArticleFragment"
+        android:label="{articleTitle}">
+        <argument
+            android:name="articleTitle"
+            app:argType="string" />
+    </fragment>
+</navigation>
